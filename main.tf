@@ -5,7 +5,7 @@ secret_key = "HIxMnjWylR7lAOPziwB0nOaNSak5kqS2VeU5IJX4"
 }
 
 resource "aws_instance" "one" {
-ami = ""
+ami = "ami-0b0dcb5067f052a63"
 instance_type = "t2.micro"
 tags = {
 Name = "Terrainstance"
