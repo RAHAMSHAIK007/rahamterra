@@ -4,8 +4,12 @@ access_key = "AKIA4QUKASHDSEKLAZKU"
 secret_key = "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"
 }
 
-resource "aws_s3_bucket" "two" {
-  bucket = "raham887799"
+resource "aws_instance" "one" {
+ ami = "ami-02b972fec07f1e659"
+  instance_type = "t2.medium"
+  tags = {
+    Name = "raham"
+  }
 }
 
 resource "aws_ebs_volume" "three" {
